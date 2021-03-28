@@ -5,13 +5,13 @@
 #You can choose how often backup will be performed: hourly | daily | weekly | monthly
 #To specify exact time of backup - edit contab setting ( /etc/crontab | /var/spool/cron )
 #To properly  use this script you need sudo permission.
-#
+
 ## instruction ##
 #install make_backup
- sudo ./install.sh
+sudo ./install.sh
 #write proper option when asked: hourly | daily | weekly | monthly
 #edit ./backup_input to specify file to backup - you can delete defaulty set your home directory
- vi | nano | mcedit  ./backup_input.conf
+vi | nano | mcedit  ./backup_input.conf
 #edit ./backup_output to specify backup location - you can delete defaulty set - your home directory
- vi | nano | mcedit ./backip_output.conf
+vi | nano | mcedit ./backip_output.conf
 #change crontab settings if needed 
