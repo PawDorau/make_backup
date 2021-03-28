@@ -21,7 +21,7 @@ function check_OUTconfig {
 	sudo touch ./backup_output.conf
 	sudo chmod 775 ./backup_output.conf
 	chown $SUDO_USER:$SUDO_USER ./backup_output.conf
-	echo "dev/null" >> ./backup_output.conf
+	echo "/home/$SUDO_USER" >> ./backup_output.conf
 	echo "backup_output.conf file created"
 	fi
 }
